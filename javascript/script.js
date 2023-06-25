@@ -70,7 +70,7 @@ thumb.forEach(img =>{
 previous_img.addEventListener("click", () =>{
     current_img_str = current_image.src;
     current_img_array = current_img_str.split(/(\d+)/)
-    img_value = current_img_array[0];
+    img_value = current_img_array[1];
 
 
 
@@ -95,7 +95,7 @@ previous_img.addEventListener("click", () =>{
 next_img.addEventListener("click", () =>{
     current_img_str = current_image.src;
     current_img_array = current_img_str.split(/(\d+)/)
-    img_value = current_img_array[0];
+    img_value = current_img_array[1];
 
     if(img_value > 59){
         img_value = 60;
