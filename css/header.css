@@ -1,0 +1,105 @@
+.logo{
+    width: 120px;
+    height: 120px;
+}
+
+.logo:hover{
+    background-color: inherit;
+}
+
+.ime_tvrtke_logo{
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.naslov{
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.logo_button{
+    display: flex;
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+}
+
+.logo_button:hover{
+    cursor: pointer;
+}
+
+
+.dd_menu{
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+}
+
+.menu_txt{
+    font-size: 3em;
+
+}
+
+
+.bx-hard-hat{
+    font-size: 3.4375em;
+}
+
+.bx-menu{
+    font-size: 3.75em;
+}
+
+#menu_button{
+    display: flex;
+    background-color: inherit;
+    border: none;
+    align-items: center;
+    transition: 300ms;
+}
+
+#menu_button:hover{
+    cursor: pointer;
+    color: #808080;
+    transition: 300ms;
+}
+
+
+@media only screen and (max-width: 768px){
+    .logo_button{
+        flex-direction: row-reverse;
+    }
+    .naslov{
+        width: 0;
+        height: 0;
+        color: transparent;
+    }
+
+    .menu_txt{
+        color: transparent;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+    .logo_button{
+        width: 30vw;
+    }
+
+    .naslov, .menu_txt{
+        font-size: 2em;
+    }
+
+    .naslov{
+        width: 0;
+        height: 0;
+        color: transparent;
+    }
+}
+
+@media only screen and (max-width: 1605px) and (min-width: 992px){
+    .logo_button{
+        width: 25vw;
+    }
+}

@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,100&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ----------------- Uvodni dio stranice sa slikom -----------------*/
+.uvod{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+    background-image: url("../images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*--------------------------- O nama dio stranice -------------------------- */
+.o_nama{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 7.5%;
+
+}
+
+.o_nama_txt{
+    display: flex;
+    width: 85vw;
+    height: 15vh;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.o_nama_h1{
+    font-size: 3.125em;
+    border-bottom: 2px solid #909090;
+}
+
+.o_nama_p{
+    font-size: 1.3em;
+    width: 85vw;
+
+}
+
+.o_nama_button{
+    width: 15vw;
+    height: 3em;
+    font-size: 1.5625em;
+    background: inherit;
+    border: 2px solid  #909090;
+    transition: 300ms;
+}
+
+.o_nama_button:hover{
+    background-color: #909090;
+    transition: 300ms;
+    color: white;
+}
+
+.o_nama_button:active{
+    background-color: #6a6a6a;
+}
+
+
+
+
+
+
+/*------------------------------------ Dio stranice s ponudama ---------------------------------*/
+
+.ponude{
+    display: flex;
+    width: 99.1vw;
+    height: 80vh;
+    background-color: #e6e6e6;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.naslov_ponude{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    justify-content: center;
+}
+
+.naslov_ponude_h1{
+    font-size: 3.125em;
+    font-weight: 1000;
+}
+
+.ponuda_main_text{
+    width: 30.25em;
+    height: 2.5em;
+    border-bottom: 2px solid #6a6a6a;
+}
+
+
+.ponude_container{
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ponuda_button{
+    width: 10vw;
+    height: 7vh;
+    border-radius: 200px;
+    border:none;
+    background-color: #292b2e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5625em;
+    transition: 300ms;
+}
+
+.ponuda_button:hover{
+    color: black;
+    transition: 300ms;
+}
+
+.ponuda_button:active{
+    background-color: #1b1b1b;
+}
+
+.ponuda_text{
+    display: flex;
+    width: 25vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #292b2e;
+    color: #e6e6e6;
+    font-size: 1.5em;
+}
+
+.ponuda_kartica{
+    display: flex;
+    width: 22vw;
+    height: 55vh;
+    background-color: #0f1012;
+    border:  2px solid #0f1012;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 400ms;
+}
+
+.ponuda_kartica:hover{
+    box-shadow: 0 0 46px -3px rgba(0,0,0,0.6);
+    transition: 400ms;
+}
+
+
+
+/*-------------------- Ponuda za ograde kartica -----------------------*/
+
+
+.ponuda_ograda_slika{
+    background-image: url("../images/11.jpg");
+    background-size: cover;
+    width: 25vw;
+    height: 30vh;
+    border-radius: 2px;
+}
+
+
+
+/*------------------ Ponuda za nadstrešnice kartica ---------------------*/
+
+
+.ponuda_nastrešnice_slika{
+    background-image: url("../images/13.jpg");
+    background-size: cover;
+    width: 25vw;
+    height: 30vh;
+    border-radius: 2px;
+}
+
+/*-------------- Ponuda za zatvaranje nadstrešnice kartica --------------*/
+
+
+.ponuda_ostala_bravarija_slika{
+    background-image: url("../images/4.jpg");
+    background-size: cover;
+    width: 25vw;
+    height: 30vh;
+    border-radius: 2px;
+}
+
+
+
+/*---------------------------------- Galerija dio stranice--------------------------------------*/
+
+
+.galerija{
+    display: flex;
+    width: 100vw;
+    height: 180vh;
+    background-color: #151515;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.naslov_galerija{
+    border-bottom: 2px solid #1b1b1b;
+    color: white;
+    font-size: 3.125em;
+    padding-top: 5vh;
+}
+
+.galerija_container{
+    width: 90vw;
+    height: 134vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #151515;
+}
+
+.img_scale{
+    width: 50%;
+    height: 34%;
+    object-fit: cover;
+}
+
+img:hover{
+    background-color: #1b1b1b;
+}
+
+.galerija_button{
+    width: 90vw;
+    height: 7vh;
+    background-color: transparent;
+    border: 2px solid #909090;
+    border-radius: 3px;
+    color: #e2e4e6;
+    font-size: 1.5em;
+    transition: 400ms;
+}
+
+.galerija_button:hover{
+    background-color: #909090;
+    transition: 400ms;
+}
+
+.galerija_button:active{
+    background-color: #6a6a6a;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) and (min-width: 992px){
+
+    .o_nama_txt{
+        margin-bottom: 5%;
+    }
+
+    .ponuda_kartica{
+        width: 25vw;
+        height: 55vh;
+    }
+
+    .ponude_container{
+        width: 90vw;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px){
+
+    .o_nama_txt{
+        margin-bottom: 10%;
+    }
+
+    .o_nama_button{
+        width: 25vw;
+    }
+
+    .ponude{
+        height: 200vh;
+    }
+    .ponude_container{
+        height: 178vh;
+        flex-direction: column;
+    }
+
+    .ponuda_kartica{
+        width: 60vw;
+    }
+
+    .ponuda_ograda_slika, .ponuda_nastrešnice_slika, .ponuda_ostala_bravarija_slika{
+        width: 60vw;
+    }
+
+    .ponuda_text{
+        width: 60vw;
+    }
+
+    .ponuda_button{
+        width: 20vw;
+    }
+
+    .galerija{
+        height: 360vh;
+    }
+
+    .galerija_container{
+        height: 320vh;
+        flex-direction: column;
+        border: 2px solid white;
+    }
+
+    .img_scale{
+        width: 100%;
+        height: 16%;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .uvod{
+        background-size: cover;
+        background-image: url("../images/17.jpg");
+    }
+
+
+
+    .o_nama{
+        height: 100vh;
+    }
+
+    .o_nama_txt{
+        height: 30vh;
+        margin-bottom: 20%;
+        font-size: 0.9em;
+    }
+
+    .o_nama_button{
+        width: 40vw;
+        margin-top: 20%;
+    }
+
+    .ponude{
+        height: 240vh;
+    }
+    .ponude_container{
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .ponuda_kartica{
+        width: 90vw;
+        height: 60vh;
+    }
+
+    .ponuda_ograda_slika, .ponuda_nastrešnice_slika, .ponuda_ostala_bravarija_slika{
+        width: 90vw;
+    }
+
+    .ponuda_text{
+        width: 90vw;
+        height: 15vh;
+    }
+
+
+    .ponuda_button{
+        width: 40vw;
+        height: 8vh;
+    }
+
+    .galerija{
+        height: 360vh;
+    }
+
+    .galerija_container{
+        height: 320vh;
+        flex-direction: column;
+    }
+
+    .img_scale{
+        width: 100%;
+        height: 16%;
+    }
+
+}
+

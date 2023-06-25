@@ -1,0 +1,229 @@
+.uvod_nadstresnice, .uvod_ograde, .uvod_ostalo{
+    width: 100vw;
+    height: 90vh;
+    position: sticky;
+    top: 0;
+    z-index: -100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.uvod_nadstresnice{
+    background-image: url("../../images/13.jpg");
+}
+
+.uvod_ograde{
+    background-image: url("../../images/40.jpg");
+}
+
+.uvod_ostalo{
+    background-image: url("../../images/ostala_bravarija/1.jpg");
+}
+
+.uvod_container{
+    position: relative;
+    width: 30vw;
+    height: 20vh;
+}
+
+.uvod_shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #292b2e;
+    opacity: 0.7;
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.uvod_naslov{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-size: 1.8em;
+    color: white;
+
+}
+
+/*---------------------- info --------------------------------------------*/
+.ponuda_info{
+    width: 100vw;
+    height: 160vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden;
+
+}
+
+.info_h1{
+    font-size: 3em;
+    width: 100vw;
+    text-align: center;
+}
+
+.text{
+    width: 90vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    height: 20vh;
+    width: 40vw;
+    text-align: center;
+}
+
+td{
+    padding: 20px;
+    border-bottom: 2px solid #909090;
+}
+
+
+.galerija{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#img-galerija{
+    width: 1000px;
+    height: 900px;
+
+}
+
+#current-image{
+    width: 100%;
+    height: 100%;
+}
+
+#img-thumbs {
+    display: flex;
+    width: 60vw;
+    height: 20vh;
+    justify-content: center;
+    margin-top: 120px;
+    overflow: auto;
+    overflow-y: hidden;
+}
+
+.thumb {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.current_img_buttons{
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next_img, #previous_img{
+    width: 8vw;
+    height: 15vh;
+    font-size: 4em;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#next_img:hover, #previous_img:hover{
+    color: #909090;
+    transition: 300ms;
+}
+
+#next_img:active, #previous_img:active{
+    color: #6a6a6a;
+    transition: 200ms;
+}
+
+
+@media screen and (max-width: 900px) {
+    .uvod_container{
+        width: 80vw;
+    }
+
+    .uvod_naslov_nadstresnice{
+        font-size: 1.4em;
+    }
+
+    .ponuda_info{
+        height: 200vh;
+    }
+
+    .text{
+        height: 80vh;
+        text-align: center;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .galerija{
+        width: 100vw;
+        height: 80vh;
+    }
+
+    #img-galerija{
+        height: auto;
+        width: 500px;
+    }
+    .current_img_buttons{
+        width: 100vw;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    #next_img, #previous_img{
+        width: 6vw;
+        z-index: 500;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #previous_img{
+        left: 0;
+    }
+
+    #next_img{
+        right: 0;
+    }
+
+    #img-thumbs{
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    .text h2{
+        font-size: 1.2em;
+    }
+
+    .mail{
+        font-size: 1.5em;
+    }
+
+}

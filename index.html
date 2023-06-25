@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ave projekt</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+  <header>
+      <!-- Logo -->
+      <div class="ime_tvrtke_logo">
+          <button class="logo_button" onclick=window.location.href='index.html'>
+              <img class="logo" src="ave_logo.svg">
+              <p class="naslov">AVE projekt</p>
+          </button>
+      </div>
+
+      <!-- Dropdown menu -->
+      <div class="dd_menu">
+          <button id="menu_button">
+              <p class="menu_txt">Meni</p>
+              <i class='bx bx-menu' ></i>
+          </button>
+
+      </div>
+  </header>
+
+  <nav id="nav_menu">
+      <div class="nav_header">
+          <p class="nav_menu_txt">Izbornik</p>
+          <button id="menu_button_exit">
+              <i class='bx bx-x'></i>
+          </button>
+      </div>
+
+      <div class="nav_ponude">
+          <ul class="nav_ul">
+              <li><a class="nav_link" href="html/sub_pages/ponuda_nadstresnica.html">Nadstrešnice</a></li><br>
+              <li><a class="nav_link"  href="html/sub_pages/ponuda_ograda.html">Ograde</a></li><br>
+              <li><a class="nav_link"  href="html/sub_pages/ponuda_ostale_bravarije.html">Ostala bravarija</a></li><br>
+              <li><a class="nav_link"  href="html/sub_pages/galerija.html">Galerija</a></li><br>
+              <br>
+              <br>
+              <li><a class="nav_link"  href="html/sub_pages/o_nama.html"> O nama</a></li>
+          </ul>
+      </div>
+
+
+
+  </nav>
+
+  <main>
+
+      <!------------- Uvodni dio ------------------------>
+      <div class="uvod">
+      </div>
+
+      <!------------- Dio o nama --------------------->
+      <div class="o_nama">
+          <div class="o_nama_txt">
+              <h1 class="o_nama_h1">O nama</h1><br>
+              <p class="o_nama_p">AVE projekt izrada nadstrešnica, ograda i ostale bravarije. Nudimo širok spektar ponuda koje su rađene po Vašim dimenzijama te su potpuno kompatibilne s objektom. Ukoliko želite saznati više kliknite na više.</p>
+          </div>
+          <button class="o_nama_button" onclick="window.location.href='html/sub_pages/o_nama.html'">Više...</button>
+      </div>
+
+      <!--------------- Dio s Ponudama -------------->
+      <div class="ponude">
+
+          <div class="naslov_ponude">
+              <h1 class="naslov_ponude_h1">Ponude:</h1>
+          </div>
+
+
+          <div class="ponuda_main_text">
+              <p>Cijene ponuda nisu fiksne! Svaka ponuda rađena je po mjeri.</p>
+          </div>
+
+
+          <div class="ponude_container">
+
+              <div class="ponuda_kartica">
+                  <div class="ponuda_ograda_slika"></div>
+                  <div class="ponuda_text">
+                      <p>Ograde</p>
+                  </div>
+                  <button class="ponuda_button" onclick="window.location.href='html/sub_pages/ponuda_ograda.html'">Detalji</button>
+
+              </div>
+
+              <div class="ponuda_kartica">
+                  <div class="ponuda_nastrešnice_slika"></div>
+                  <div class="ponuda_text">
+                      <p>Nadstrešnice</p>
+                  </div>
+                  <button class="ponuda_button" onclick="window.location.href='html/sub_pages/ponuda_nadstresnica.html'">Detalji</button>
+              </div>
+
+              <div class="ponuda_kartica">
+                  <div class="ponuda_ostala_bravarija_slika"></div>
+                  <div class="ponuda_text">
+                      <p>Ostala bravarija</p>
+                  </div>
+                  <button class="ponuda_button" onclick="window.location.href='html/sub_pages/ponuda_ostale_bravarije.html'">Detalji</button>
+              </div>
+
+          </div>
+
+      </div>
+
+      <!--------------------- Galerija dio stranice -------------------------->
+      <div class="galerija">
+          <h1 class="naslov_galerija">Galerija</h1>
+
+          <div class="galerija_container">
+              <img class="img_scale" src="images/1.jpg" alt="Greška">
+              <img class="img_scale" src="images/5.jpg" alt="Greška">
+              <img class="img_scale" src="images/12.jpg" alt="Greška">
+              <img class="img_scale" src="images/20.jpg" alt="Greška">
+              <img class="img_scale" src="images/24.jpg" alt="Greška">
+              <img class="img_scale" src="images/39.jpg" alt="Greška">
+          </div>
+
+          <button class="galerija_button" onclick="window.location.href='html/sub_pages/galerija.html'">Galerija</button>
+      </div>
+
+      <footer>
+          <div class="footer_kontakt">
+              <h2>Kontakt:</h2>
+              <ul class="footer_ul">
+                  <li><i class='bx bx-home'></i> Adresa: Kušanec 67, 10410, Velika Gorica, Croatia</li>
+                  <li><i class='bx bx-phone-call' ></i> Telefon: +385 91 123 4426 </li>
+                  <li><i class='bx bx-envelope'></i> Mail: velimir_car@gmail.com</li>
+              </ul>
+          </div>
+
+          <div class="footer_linkovi">
+              <h2>Linkovi:</h2>
+              <ul class="footer_ol">
+                  <li> <a class="footer_link"  href="index.html">Početna</a> </li>
+                  <ul>
+                      <li> <a class="footer_link" href="html/sub_pages/ponuda_nadstresnica.html">Nadstrešnice</a></li>
+                      <li> <a class="footer_link" href="html/sub_pages/ponuda_ograda.html">Ograde</a></li>
+                      <li> <a class="footer_link" href="html/sub_pages/ponuda_ostale_bravarije.html">Ostala bravarija</a></li>
+                      <li> <a class="footer_link" href="html/sub_pages/galerija.html">Galerija</a></li>
+                      <li> <a class="footer_link" href="html/sub_pages/o_nama.html">O nama</a></li>
+                  </ul>
+              </ul>
+          </div>
+
+      </footer>
+  </main>
+
+  <script src="javascript/menu_button.js"></script>
+</body>
+</html>

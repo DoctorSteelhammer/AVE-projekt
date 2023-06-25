@@ -1,0 +1,70 @@
+main{
+    background-color: #e6e6e6;
+}
+
+/*--------------- Uvodni dio s logom -------------------*/
+.big_logo{
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.25em;
+    background-color: #e6e6e6;
+}
+
+/*--------------- Glavni info --------------------------*/
+.logo_dio{
+    width: 500px;
+    height: 500px;
+}
+
+.maintxt{
+    display: flex;
+    width:80vw;
+    height: 50vh;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    font-size: 1.2em;
+}
+
+.txt{
+  width: 100%;
+}
+
+.lista_onama{
+    width: 100%;
+}
+
+
+.lokacija{
+    display: flex;
+    width: 100vw;
+    height: 20vh;
+    justify-content: center;
+}
+.lokacija_txt{
+    font-size: 3.125em;
+    font-weight: 1000;
+}
+
+.google_maps{
+    width: 90vw;
+    height: 70vh;
+    margin-bottom: 10vh;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .maintxt{
+        height: 110vh;
+    }
+
+    .logo_dio{
+        width: 80%;
+        height: 70%;
+    }
+
+}
