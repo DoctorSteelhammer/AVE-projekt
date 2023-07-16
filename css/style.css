@@ -95,7 +95,7 @@ footer{
 
 @media screen and (max-width: 768px){
     footer{
-        height: 65vh;
+        height: 80vh;
     }
 
     .footer_kontakt, .footer_linkovi{
