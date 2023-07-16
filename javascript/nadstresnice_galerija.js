@@ -26,7 +26,7 @@ for (let i = 1; i <= 4; i++) {
 previous_img.addEventListener("click", () =>{
     current_img_str = current_image.src;
     current_img_array = current_img_str.split(/(\d+)/)
-    img_value = current_img_array[3];
+    img_value = current_img_array[1];
 
 
 
@@ -50,7 +50,7 @@ previous_img.addEventListener("click", () =>{
 next_img.addEventListener("click", () =>{
     current_img_str = current_image.src;
     current_img_array = current_img_str.split(/(\d+)/)
-    img_value = current_img_array[3];
+    img_value = current_img_array[1];
 
     if(img_value > 3){
         img_value = 4;
