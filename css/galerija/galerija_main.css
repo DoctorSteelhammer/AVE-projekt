@@ -22,7 +22,7 @@
     font-size: 1.25em;
 }
 
-/*------------------- dio s slikama -------------------------*/
+/*------------------- dio sa slikama -------------------------*/
 .galerija{
     width: 100vw;
     height: 120vh;
@@ -195,6 +195,12 @@
     #img-galerija{
         height: auto;
         width: 500px;
+    }
+}
+
+@media screen and (max-height: 790px){
+    #img-galerija{
+        max-height: 900px;
     }
 }
 
