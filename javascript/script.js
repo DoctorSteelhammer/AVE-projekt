@@ -97,8 +97,8 @@ next_img.addEventListener("click", () =>{
     current_img_array = current_img_str.split(/(\d+)/)
     img_value = current_img_array[1];
 
-    if(img_value > 59){
-        img_value = 60;
+    if(img_value > 63){
+        img_value = 64;
         current_image.src = "../../images/"+img_value+".jpg"
         current_image.alt = "Image"+img_value;
     }
